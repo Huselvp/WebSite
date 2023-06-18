@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import NavBar from './components/NavBar/NavBar';
+import Post from './components/Post/Post';
+import Carousell from './components/Carousel/Carousel';
+
+import { images } from './assets';
+
+
 import './App.css';
 
+
 function App() {
+  const Images = [images.os, images.lebonProf, images.about04]
+
+  const text_os = { title: 'Zakat', text: 'fhzu zejkcfn jncd zmjoenc omnzqc amocn mozncd qmojdnc monqdc monqcd omnqsdc fhzu zejkcfn jncd zmjoenc omnzqc amocn mozncd qmojdnc monqdc monqcd omnqsdc fhzu zejkcfn jncd zmjoenc omnzqc amocn mozncd qmojdnc monqdc monqcd omnqsdc' }
+  const text_LBP = { title: 'Zakat Al Fitre', text: 'fhzu zejkcfn jncd zmjoenc omnzqc amocn mozncd qmojdnc monqdc monqcd omnqsdc fhzu zejkcfn jncd zmjoenc omnzqc amocn mozncd qmojdnc monqdc monqcd omnqsdcfhzu zejkcfn jncd zmjoenc omnzqc amocn mozncd qmojdnc monqdc monqcd omnqsdc' }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <Carousell images={Images} />
+      <Post image={images.os} text={text_os} isImageRight={true} index='1' />
+      <Post image={images.lebonProf} text={text_LBP} isImageRight={false} index='2' />
+      <Post image={images.about04} text={text_LBP} isImageRight={true} index='3' />
+
     </div>
   );
 }

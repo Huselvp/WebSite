@@ -1,0 +1,104 @@
+/* NavBar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.navbar-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    border: 1px solid skyblue;
+}
+
+.navbar-card {
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: #ddd;
+    color: #333;
+}
+
+.navbar__organization {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: skyblue;
+    padding: 15px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.navbar__organization::before,
+.navbar__organization::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: black;
+}
+
+.navbar__organization::before {
+    left: 10px;
+}
+
+.navbar__organization::after {
+    right: 10px;
+}
+
+.navbar__organization::before,
+.navbar__organization::after {
+    height: calc(100% - 4px);
+    /* Nouvelle ligne ajoutée */
+}
+
+.navbar__organization::before {
+    top: 2px;
+    /* Nouvelle ligne ajoutée */
+}
+
+.navbar__organization::after {
+    top: 2px;
+    /* Nouvelle ligne ajoutée */
+}
+
+.navbar__title {
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.navbar__title--larger {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar__title--smaller {
+    font-size: 12px;
+    font-weight: bold;
+}
