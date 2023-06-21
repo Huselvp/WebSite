@@ -9,7 +9,7 @@ import './App.css';
 
 
 function App() {
-  const Images = [images.os, images.lebonProf, images.about04]
+  const Images = [images.image1, images.image2, images.image3]
 
   const text_os = { title: 'Zakat', text: 'fhzu zejkcfn jncd zmjoenc omnzqc amocn mozncd qmojdnc monqdc monqcd omnqsdc fhzu zejkcfn jncd zmjoenc omnzqc amocn mozncd qmojdnc monqdc monqcd omnqsdc fhzu zejkcfn jncd zmjoenc omnzqc amocn mozncd qmojdnc monqdc monqcd omnqsdc' }
   const text_LBP = { title: 'Zakat Al Fitre', text: 'fhzu zejkcfn jncd zmjoenc omnzqc amocn mozncd qmojdnc monqdc monqcd omnqsdc fhzu zejkcfn jncd zmjoenc omnzqc amocn mozncd qmojdnc monqdc monqcd omnqsdcfhzu zejkcfn jncd zmjoenc omnzqc amocn mozncd qmojdnc monqdc monqcd omnqsdc' }
@@ -18,9 +18,9 @@ function App() {
     <div className="App">
       <NavBar />
       <Carousell images={Images} />
-      <Post image={images.os} text={text_os} isImageRight={true} index='1' />
-      <Post image={images.lebonProf} text={text_LBP} isImageRight={false} index='2' />
-      <Post image={images.about04} text={text_LBP} isImageRight={true} index='3' />
+      <Post image={images.image1} text={text_os} isImageRight={true} index='1' />
+      <Post image={images.image2} text={text_LBP} isImageRight={false} index='2' />
+      <Post image={images.image3} text={text_LBP} isImageRight={true} index='3' />
 
     </div>
   );
