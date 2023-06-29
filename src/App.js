@@ -1,11 +1,9 @@
 import NavBar from './components/NavBar/NavBar';
 import Post from './components/Post/Post';
 import Carousell from './components/Carousel/Carousel';
-
 import { images } from './assets';
-
-
 import './App.css';
+import Footer from './Footer/Footer';
 
 
 function App() {
@@ -18,9 +16,13 @@ function App() {
     <div className="App">
       <NavBar />
       <Carousell images={Images} />
-      <Post image={images.image1} text={text_os} isImageRight={true} index='1' />
-      <Post image={images.image2} text={text_LBP} isImageRight={false} index='2' />
-      <Post image={images.image3} text={text_LBP} isImageRight={true} index='3' />
+   <div className="post-container">
+  <Post image={images.image1} text={text_os} isImageRight={true} index='1' />
+  <Post image={images.image2} text={text_LBP} isImageRight={false} index='2' />
+  <Post image={images.image3} text={text_LBP} isImageRight={true} index='3' />
+</div>
+
+      <Footer/>
 
     </div>
   );

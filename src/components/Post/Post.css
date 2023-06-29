@@ -2,32 +2,48 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100vh;
     padding: 20px;
-}
-
-.post__image {
-    width: 50%;
+    background-color: #e4e4e4;
+    color: #f1c365;
+  }
+  
+  .post__image {
+    width: 40%;
     height: auto;
     object-fit: cover;
-}
-
-.post__title {
+    margin-right: 20px;
+  }
+  
+  .post__content {
+    flex: 1;
+  }
+  
+  .post__title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
     text-align: center;
-}
-
-.post__text {
+  }
+  
+  .post__text {
     font-size: 18px;
     line-height: 1.5;
-}
-
-.image-right {
+    text-align: center;
+    margin-top: 10px; /* Adjust this value to reduce the space */
+  }
+  
+  .image-right {
     flex-direction: row-reverse;
-}
-
-.text-right {
+  }
+  
+  .text-right {
     text-align: right;
-}
+  }
+  .post-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+  }
+  
+  
+  

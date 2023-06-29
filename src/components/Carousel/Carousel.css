@@ -1,48 +1,47 @@
-/* Carousel.css */
-
 .carousel {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-}
-
-.carousel__images {
+    height: 250px; /* Adjust this value to set the desired height */
+  }
+  
+  .carousel__images {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.carousel__image {
+  }
+  
+  .carousel__image {
     width: 200px;
     height: 200px;
     object-fit: cover;
     cursor: pointer;
     opacity: 0.5;
     transition: opacity 0.3s ease-in-out;
-}
-
-.carousel__image.active {
+  }
+  
+  .carousel__image.active {
     opacity: 1;
-}
-
-.carousel__indicator {
+  }
+  
+  .carousel__indicator {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 10px;
-}
-
-.carousel__indicator-dot {
+  }
+  
+  .carousel__indicator-dot {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: gray;
     margin: 0 5px;
     cursor: pointer;
-}
-
-.carousel__indicator-dot.active {
+  }
+  
+  .carousel__indicator-dot.active {
     background-color: black;
-}
+  }
+  
